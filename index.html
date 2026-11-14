@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Practice Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>⚡ DSA Practice Tracker</h1>
+        <p>Track your coding journey, one problem at a time.</p>
+    </header>
+
+    <main>
+        <section class="stats">
+            <div class="card">
+                <h3>Total Problems</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Solved</h3>
+                <p id="solved">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Unsolved</h3>
+                <p id="unsolved">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Progress</h3>
+                <p id="progress">0%</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add a Problem</h2>
+
+            <form id="problemForm">
+                <input type="text" id="problemName"
+                    placeholder="Problem Name" required>
+
+                <select id="platform">
+                    <option value="LeetCode">LeetCode</option>
+                    <option value="CodeChef">CodeChef</option>
+                    <option value="Codeforces">Codeforces</option>
+                    <option value="HackerRank">HackerRank</option>
+                </select>
+
+                <select id="topic">
+                    <option value="Arrays">Arrays</option>
+                    <option value="Strings">Strings</option>
+                    <option value="Linked Lists">Linked Lists</option>
+                    <option value="Trees">Trees</option>
+                    <option value="Graphs">Graphs</option>
+                    <option value="Dynamic Programming">Dynamic Programming</option>
+                    <option value="Sorting">Sorting</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <select id="difficulty">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+
+                <button type="submit">+ Add Problem</button>
+            </form>
+        </section>
+
+        <section class="problem-section">
+            <h2>Your Problems</h2>
+
+            <div class="filters">
+                <select id="filterStatus">
+                    <option value="All">All Problems</option>
+                    <option value="Solved">Solved</option>
+                    <option value="Unsolved">Unsolved</option>
+                </select>
+
+                <select id="filterPlatform">
+                    <option value="All">All Platforms</option>
+                    <option value="LeetCode">LeetCode</option>
+                    <option value="CodeChef">CodeChef</option>
+                    <option value="Codeforces">Codeforces</option>
+                    <option value="HackerRank">HackerRank</option>
+                </select>
+            </div>
+
+            <div id="problemList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with ❤️ | DSA Practice Tracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
